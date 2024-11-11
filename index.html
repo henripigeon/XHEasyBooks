@@ -26,11 +26,20 @@
             text-decoration: none;
         }
 
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
         section {
+            background: #fff;
             padding: 20px;
             margin: 20px;
-            background: #fff;
+            width: 80%;
             border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         footer {
@@ -43,33 +52,43 @@
             bottom: 0;
         }
 
-        button {
+        .run-button {
             padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
             background-color: #4CAF50;
             color: white;
-            border: none;
+            text-decoration: none;
             border-radius: 5px;
         }
 
-        button:hover {
+        .run-button:hover {
             background-color: #45a049;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            section {
+                width: 100%;
+                margin: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- HTML content for XH EasyBooks -->
+
+    <!-- Header -->
     <header>
         <h1>Welcome to XH EasyBooks</h1>
         <nav>
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
+            <a href="#run-code-section">Run Code</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- About Section -->
         <section id="about">
             <h2>About XH EasyBooks</h2>
             <p>XH EasyBooks was created to make bookkeeping simpler, more accessible, and more efficient with the power of AI. We know that bookkeeping can often feel complex and time-consuming, so we aim to bring automation, intelligence, and ease to the process.</p>
@@ -77,6 +96,7 @@
             <p>Through the integration of AI-driven insights, XH EasyBooks can also help identify discrepancies, streamline entries, and ensure financial accuracy, making bookkeeping accessible to everyone, regardless of experience level.</p>
         </section>
 
+        <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
             <p>At XH EasyBooks, we offer a range of services to support your financial management:</p>
@@ -87,25 +107,29 @@
                 <li>Expense tracking</li>
                 <li>Detailed financial reporting</li>
             </ul>
-            <button onclick="changeColor()">Change Background Color</button>
+            <a href="#run-code-section" class="run-button">Run Code</a>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <p>For inquiries, please contact us at: <a href="mailto:XHEasyBooks@gmail.com">XHEasyBooks@gmail.com</a></p>
         </section>
+
+        <!-- Run Code Section -->
+        <section id="run-code-section">
+            <h2>Run Python Code in Your Browser</h2>
+            <p>This Python script can be executed directly in your browser using Google Colab. Click the button below to open the code and run it without any installation.</p>
+            
+            <!-- Google Colab Link -->
+            <a href="https://colab.research.google.com/drive/1jz4wnFPpjqKxDsrOEDC0TLkRllWDA11E?usp=sharing" target="_blank" class="run-button">Run on Google Colab</a>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 XH EasyBooks</p>
     </footer>
 
-    <script>
-        // JavaScript for background color change
-        function changeColor() {
-            // Generate a random hex color and apply it as the background color
-            document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        }
-    </script>
 </body>
 </html>
