@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XH EasyBooks</title>
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML content for XH EasyBooks -->
+    <header>
+        <h1>Welcome to XH EasyBooks</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About XH EasyBooks</h2>
+            <p>XH EasyBooks was created to make bookkeeping simpler, more accessible, and more efficient with the power of AI. We know that bookkeeping can often feel complex and time-consuming, so we aim to bring automation, intelligence, and ease to the process.</p>
+            <p>Whether you’re a small business owner, freelancer, or simply looking to keep better track of your finances, XH EasyBooks provides tools and features designed to simplify bookkeeping tasks. From managing invoices and tracking expenses to generating financial reports, our goal is to reduce the manual workload involved in bookkeeping.</p>
+            <p>Through the integration of AI-driven insights, XH EasyBooks can also help identify discrepancies, streamline entries, and ensure financial accuracy, making bookkeeping accessible to everyone, regardless of experience level.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At XH EasyBooks, we offer a range of services to support your financial management:</p>
+            <ul>
+                <li>Automated bookkeeping entries</li>
+                <li>AI-driven discrepancy detection</li>
+                <li>Invoice management</li>
+                <li>Expense tracking</li>
+                <li>Detailed financial reporting</li>
+            </ul>
+            <button onclick="changeColor()">Change Background Color</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please contact us at: <a href="mailto:XHEasyBooks@gmail.com">XHEasyBooks@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 XH EasyBooks</p>
+    </footer>
+
+    <script>
+        // JavaScript for background color change
+        function changeColor() {
+            // Generate a random hex color and apply it as the background color
+            document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        }
+    </script>
+</body>
+</html>
